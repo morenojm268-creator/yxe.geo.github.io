@@ -8,50 +8,44 @@
     <style>
         :root { --azul-marino: #001f3f; --dorado: #b8860b; }
         body { background-color: #f4f4f4; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #333; }
-        .hero { background-color: var-azul-marino; background: linear-gradient(rgba(0,31,63,0.9), rgba(0,31,63,0.9)); color: white; padding: 80px 0; text-align: center; border-bottom: 5px solid var(--dorado); }
+        .hero { background-color: var(--azul-marino); color: white; padding: 60px 0; text-align: center; border-bottom: 5px solid var(--dorado); }
         .btn-gold { background-color: var(--dorado); color: white; font-weight: bold; padding: 12px 30px; border: none; }
-        .btn-gold:hover { background-color: #8b6508; color: white; }
-        .cert-card { border: none; border-left: 6px solid var(--dorado); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        footer { background: var(--azul-marino); color: white; padding: 20px 0; font-size: 0.9rem; margin-top: 50px; }
+        .cert-img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin-bottom: 20px; }
+        .card-curso { border: none; border-top: 5px solid var(--dorado); }
     </style>
 </head>
 <body>
 
 <header class="hero">
     <div class="container">
-        <h1 class="display-3 fw-bold">GEOCIENCIAS IA</h1>
+        <h1 class="display-4 fw-bold">GEOCIENCIAS IA</h1>
         <p class="lead">CONOCER LA TIERRA • ENTENDER EL PRESENTE • CONSTRUIR EL FUTURO</p>
-        <div class="mt-4">
-            <a href="#curso" class="btn btn-gold btn-lg">INSCRIBIRME AL CURSO GRATIS</a>
-        </div>
     </div>
 </header>
 
-<main class="container my-5" id="curso">
+<main class="container my-5">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card cert-card p-5 bg-white">
-                <h2 class="fw-bold mb-4" style="color: var(--azul-marino);">Bases de las Geociencias Modernas</h2>
-                <p>Un programa integral que abarca los fundamentos de la Geología, Geofísica, Topografía, GIS, Arqueología y Ciencias de la Tierra aplicadas.</p>
-                <hr>
-                <div class="row text-center mt-4">
-                    <div class="col-4"><strong>DURACIÓN</strong><br>40 Horas</div>
-                    <div class="col-4"><strong>MODALIDAD</strong><br>Online</div>
-                    <div class="col-4"><strong>COSTO</strong><br>Gratuito</div>
+        <div class="col-md-10 text-center">
+            <img src="ChatGPT Image 24 abr 2026, 12_58_06 p.m..png" alt="Certificado" class="cert-img">
+            
+            <div class="card card-curso p-4 bg-white shadow-sm mt-4">
+                <h2 class="fw-bold" style="color: var(--azul-marino);">Bases de las Geociencias Modernas</h2>
+                <p class="text-muted">Un programa integral de Geología, Geofísica y GIS.</p>
+                <div class="row mt-3">
+                    <div class="col-4"><strong>40 Horas</strong></div>
+                    <div class="col-4"><strong>Online</strong></div>
+                    <div class="col-4"><strong>Gratis</strong></div>
                 </div>
-                <div class="mt-5 text-center">
-                    <p class="text-muted">Certificado avalado por expertos en la materia.</p>
-                    <button class="btn btn-dark btn-lg w-100" disabled>PRÓXIMAMENTE - MAYO 2026</button>
+                <div class="mt-4">
+                    <button class="btn btn-dark btn-lg w-100" disabled>INSCRIPCIONES EN MAYO 2026</button>
                 </div>
             </div>
         </div>
     </div>
 </main>
 
-<footer class="text-center">
-    <div class="container">
-        <p>© 2026 GeoCiencias IA | Desarrollado por Joel</p>
-    </div>
+<footer class="text-center py-4">
+    <p>© 2026 GeoCiencias IA | Creado por Joel</p>
 </footer>
 
 </body>
