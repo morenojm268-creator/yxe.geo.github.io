@@ -6,46 +6,35 @@
     <title>GeoCiencias IA | Academia Digital</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root { --azul-marino: #001f3f; --dorado: #b8860b; }
-        body { background-color: #f4f4f4; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #333; }
-        .hero { background-color: var(--azul-marino); color: white; padding: 60px 0; text-align: center; border-bottom: 5px solid var(--dorado); }
-        .btn-gold { background-color: var(--dorado); color: white; font-weight: bold; padding: 12px 30px; border: none; }
-        .cert-img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin-bottom: 20px; }
-        .card-curso { border: none; border-top: 5px solid var(--dorado); }
+        :root { --azul: #001f3f; --oro: #b8860b; }
+        body { background-color: #f4f4f4; color: #333; font-family: sans-serif; }
+        .hero { background-color: var(--azul); color: white; padding: 60px 0; text-align: center; border-bottom: 5px solid var(--oro); }
+        .contenedor-cert { max-width: 800px; margin: 40px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        img { width: 100%; height: auto; border-radius: 5px; }
+        .btn-inscripcion { background-color: var(--oro); color: white; width: 100%; padding: 15px; font-weight: bold; text-decoration: none; display: inline-block; border-radius: 5px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <header class="hero">
-    <div class="container">
-        <h1 class="display-4 fw-bold">GEOCIENCIAS IA</h1>
-        <p class="lead">CONOCER LA TIERRA • ENTENDER EL PRESENTE • CONSTRUIR EL FUTURO</p>
-    </div>
+    <h1>GEOCIENCIAS IA</h1>
+    <p>CONOCER LA TIERRA • ENTENDER EL PRESENTE • CONSTRUIR EL FUTURO</p>
 </header>
 
-<main class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-md-10 text-center">
-            <img src="ChatGPT Image 24 abr 2026, 12_58_06 p.m..png" alt="Certificado" class="cert-img">
-            
-            <div class="card card-curso p-4 bg-white shadow-sm mt-4">
-                <h2 class="fw-bold" style="color: var(--azul-marino);">Bases de las Geociencias Modernas</h2>
-                <p class="text-muted">Un programa integral de Geología, Geofísica y GIS.</p>
-                <div class="row mt-3">
-                    <div class="col-4"><strong>40 Horas</strong></div>
-                    <div class="col-4"><strong>Online</strong></div>
-                    <div class="col-4"><strong>Gratis</strong></div>
-                </div>
-                <div class="mt-4">
-                    <button class="btn btn-dark btn-lg w-100" disabled>INSCRIPCIONES EN MAYO 2026</button>
-                </div>
-            </div>
+<div class="container">
+    <div class="contenedor-cert text-center">
+        <img src="ChatGPT Image 24 abr 2026, 12_58_06 p.m..png" alt="Certificado Bases de las Geociencias Modernas">
+        
+        <div class="mt-4">
+            <h2 style="color: var(--azul);">Bases de las Geociencias Modernas</h2>
+            <p>Curso Integral de Geología, Geofísica y GIS</p>
+            <div class="btn-inscripcion">PRÓXIMAMENTE - MAYO 2026</div>
         </div>
     </div>
-</main>
+</div>
 
 <footer class="text-center py-4">
-    <p>© 2026 GeoCiencias IA | Creado por Joel</p>
+    <p>© 2026 GeoCiencias IA | Joel</p>
 </footer>
 
 </body>
