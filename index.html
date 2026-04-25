@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APRENDIENDO SOBRE LAS GEOCIENCIAS</title>
+    <title>CIENCIAS DE LA TIERRA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
@@ -17,7 +17,7 @@
         body { 
             background-color: var(--gris-claro); 
             color: #2c3e50; 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
         }
 
@@ -26,6 +26,14 @@
             background: var(--blanco-puro);
             border-bottom: 1px solid #eee;
             margin-bottom: 40px;
+        }
+
+        .nav-logo {
+            color: var(--azul-noche);
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
         }
 
         .titulo-principal { 
@@ -60,11 +68,6 @@
             border-radius: 12px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             margin-bottom: 40px;
-            transition: transform 0.3s ease;
-        }
-        
-        .cert-img:hover {
-            transform: scale(1.01);
         }
 
         .grid-info {
@@ -79,6 +82,7 @@
             background: var(--gris-claro);
             border-radius: 10px;
             border-bottom: 3px solid var(--oro-noble);
+            text-align: center;
         }
 
         .info-item span {
@@ -89,11 +93,6 @@
             font-weight: 700;
         }
 
-        .info-item strong {
-            font-size: 1.1rem;
-            color: var(--azul-noche);
-        }
-
         .btn-principal { 
             background-color: var(--azul-noche); 
             color: white; 
@@ -102,11 +101,10 @@
             text-decoration: none; 
             display: inline-block; 
             font-weight: 700; 
-            letter-spacing: 1px;
-            border: 2px solid var(--azul-noche);
-            transition: all 0.3s ease;
             width: 100%;
             max-width: 400px;
+            border: 2px solid var(--azul-noche);
+            transition: all 0.3s ease;
         }
 
         .btn-principal:hover {
@@ -114,20 +112,12 @@
             color: var(--azul-noche);
         }
 
-        .insta-social {
-            margin-top: 30px;
-            display: inline-block;
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
         footer { 
             margin: 60px 0 40px; 
             color: #bdc3c7; 
             font-size: 0.8rem; 
             text-transform: uppercase;
-            letter-spacing: 1px;
+            text-align: center;
         }
     </style>
 </head>
@@ -135,20 +125,20 @@
 
 <nav class="navbar-minimal text-center">
     <div class="container">
-        <span class="fw-bold" style="color: var(--azul-noche);">JOEL | INGENIERO EN GEOCIENCIAS</span>
+        <span class="nav-logo">CIENCIAS DE LA TIERRA</span>
     </div>
 </nav>
 
 <div class="container text-center">
     <h1 class="titulo-principal">APRENDIENDO SOBRE LAS GEOCIENCIAS</h1>
-    <p class="subtitulo text-uppercase">Formación Técnica Especializada</p>
+    <p class="subtitulo">FORMACIÓN TÉCNICA ESPECIALIZADA</p>
     
     <div class="card-container">
         <img src="ChatGPT Image 24 abr 2026, 12_58_06 p.m..png" alt="Diplomado" class="cert-img">
         
         <div class="text-start mb-5">
-            <h2 class="fw-bold h3 mb-3">Bases de las Geociencias Modernas</h2>
-            <p class="text-muted">Un programa técnico diseñado para dominar los fundamentos de la Geología, Geofísica y los Sistemas de Información Geográfica (GIS).</p>
+            <h2 class="fw-bold h3 mb-3 text-center">Bases de las Geociencias Modernas</h2>
+            <p class="text-muted text-center">Dominio de fundamentos en Geología, Geofísica y Sistemas de Información Geográfica (GIS).</p>
         </div>
 
         <div class="grid-info">
@@ -166,12 +156,8 @@
             </div>
         </div>
 
-        <div class="alert alert-light border text-center mb-4">
-            <i class="bi bi-calendar-check me-2"></i> Apertura de registros: <strong>Mayo 2026</strong>
-        </div>
-
-        <a href="https://www.instagram.com/yxe.geo" target="_blank" class="btn-principal">
-            SÍGUEME PARA MÁS INFORMACIÓN
+        <a href="https://www.instagram.com/yxe.geo" target="_blank" class="btn-principal text-center">
+            MÁS INFORMACIÓN EN @YXE.GEO
         </a>
     </div>
 
