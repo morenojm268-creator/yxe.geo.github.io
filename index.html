@@ -22,16 +22,32 @@
             margin: 0; 
         }
 
+        /* Navbar Mejorado con LOGO */
         .navbar-minimal { 
-            padding: 18px 0; 
+            padding: 15px 0; 
             background: var(--blanco-puro); 
             border-bottom: 2px solid rgba(0,0,0,0.05); 
-            text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        .nav-logo { 
+        
+        .navbar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-logo-img {
+            height: 40px; /* Ajusta este tamaño según te guste tu logo */
+            width: auto;
+            margin-right: 15px;
+        }
+
+        .nav-logo-text { 
             font-weight: 900; 
             letter-spacing: 5px; 
             color: var(--azul-profundo); 
@@ -129,7 +145,6 @@
             transform: translateY(-2px); 
         }
 
-        /* Sección de WhatsApp */
         .whatsapp-box {
             margin-top: 30px;
             padding: 25px;
@@ -178,7 +193,10 @@
 <body>
 
 <nav class="navbar-minimal">
-    <div class="container"><span class="nav-logo">CIENCIAS DE LA TIERRA</span></div>
+    <div class="navbar-container">
+        <img src="logo.jpg" alt="Logo Ciencias de la Tierra" class="nav-logo-img">
+        <span class="nav-logo-text">CIENCIAS DE LA TIERRA</span>
+    </div>
 </nav>
 
 <div class="container main-container">
