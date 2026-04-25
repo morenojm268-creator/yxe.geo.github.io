@@ -12,7 +12,7 @@
             --oro-noble: #b8860b; 
             --blanco-puro: #ffffff; 
             --fondo-gris: #f0f2f5; 
-            --texto-suave: #555;
+            --whatsapp: #25D366;
         }
 
         body { 
@@ -22,7 +22,6 @@
             margin: 0; 
         }
 
-        /* Navbar Minimalista */
         .navbar-minimal { 
             padding: 18px 0; 
             background: var(--blanco-puro); 
@@ -56,7 +55,6 @@
             font-size: 1.8rem;
         }
 
-        /* Tarjeta Principal */
         .card-premium { 
             background: var(--blanco-puro); 
             border-radius: 24px; 
@@ -65,24 +63,14 @@
             border: none;
         }
 
-        .portada-container {
-            position: relative;
-        }
-
         .portada-img { 
             width: 100%; 
             height: auto; 
             display: block; 
-            transition: transform 0.5s ease;
-        }
-
-        .card-premium:hover .portada-img {
-            transform: scale(1.02);
         }
 
         .content-area { padding: 50px; }
 
-        /* Stats de diseño moderno */
         .grid-stats { 
             display: grid; 
             grid-template-columns: repeat(3, 1fr); 
@@ -107,25 +95,14 @@
             text-align: center; 
             text-transform: uppercase; 
             font-size: 1.2rem;
-            position: relative;
-        }
-        .section-title::after {
-            content: "";
-            width: 50px;
-            height: 3px;
-            background: var(--oro-noble);
-            display: block;
-            margin: 10px auto 0;
         }
 
-        /* Formulario Estilizado */
         .form-label { 
             font-weight: 700; 
             color: var(--azul-profundo); 
             font-size: 0.75rem; 
             text-transform: uppercase; 
             margin-bottom: 10px; 
-            padding-left: 5px;
         }
         .form-control, .form-select { 
             border-radius: 12px; 
@@ -133,14 +110,6 @@
             border: 2px solid #f1f4f8; 
             background-color: #f8fafc; 
             margin-bottom: 20px;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-        .form-control:focus, .form-select:focus { 
-            border-color: var(--oro-noble); 
-            background-color: #fff;
-            box-shadow: 0 0 0 4px rgba(184, 134, 11, 0.1);
-            outline: none; 
         }
 
         .btn-inscripcion { 
@@ -153,30 +122,49 @@
             border: none; 
             text-transform: uppercase; 
             letter-spacing: 2px; 
-            transition: all 0.4s ease; 
-            margin-top: 15px; 
-            font-size: 1rem;
+            transition: all 0.3s ease; 
         }
         .btn-inscripcion:hover { 
             background: #003366; 
-            transform: translateY(-3px); 
-            box-shadow: 0 10px 20px rgba(0, 31, 63, 0.2); 
+            transform: translateY(-2px); 
+        }
+
+        /* Sección de WhatsApp */
+        .whatsapp-box {
+            margin-top: 30px;
+            padding: 25px;
+            background-color: #e7f9ee;
+            border-radius: 18px;
+            border: 2px dashed var(--whatsapp);
+            text-align: center;
+        }
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ebc5a;
+            color: white;
+            transform: scale(1.05);
         }
 
         .insta-footer { 
-            display: inline-flex;
-            align-items: center;
+            display: flex;
             justify-content: center;
-            gap: 10px;
-            width: 100%;
             margin-top: 40px; 
             color: #E1306C; 
             text-decoration: none; 
             font-weight: 700; 
-            font-size: 1rem;
-            transition: 0.3s;
         }
-        .insta-footer:hover { opacity: 0.8; transform: scale(1.05); }
 
         footer { 
             padding: 60px 0; 
@@ -184,7 +172,6 @@
             font-size: 0.7rem; 
             text-align: center; 
             text-transform: uppercase; 
-            letter-spacing: 2px; 
         }
     </style>
 </head>
@@ -198,61 +185,53 @@
     <h1 class="titulo-header">APRENDIENDO SOBRE LAS GEOCIENCIAS</h1>
     
     <div class="card-premium">
-        <div class="portada-container">
-            <img src="currr.png" alt="Bases de las Geociencias Modernas" class="portada-img">
-        </div>
+        <img src="currr.png" alt="Bases de las Geociencias Modernas" class="portada-img">
         
         <div class="content-area">
             <div class="grid-stats">
-                <div class="stat-box">
-                    <i class="bi bi-clock-history"></i>
-                    <span>Duración</span><strong>40 Horas</strong>
-                </div>
-                <div class="stat-box">
-                    <i class="bi bi-currency-dollar"></i>
-                    <span>Inversión</span><strong>Gratuito</strong>
-                </div>
-                <div class="stat-box">
-                    <i class="bi bi-patch-check"></i>
-                    <span>Nivel</span><strong>Certificado</strong>
-                </div>
+                <div class="stat-box"><i class="bi bi-clock-history"></i><span>Duración</span><strong>40 Horas</strong></div>
+                <div class="stat-box"><i class="bi bi-currency-dollar"></i><span>Inversión</span><strong>Gratuito</strong></div>
+                <div class="stat-box"><i class="bi bi-patch-check"></i><span>Nivel</span><strong>Certificado</strong></div>
             </div>
 
-            <h2 class="section-title">Inscripción al Programa</h2>
+            <h2 class="section-title">Registro de Inscripción</h2>
             
             <form action="https://formspree.io/f/xqewjqll" method="POST">
-                <div class="row">
-                    <div class="col-12">
-                        <label class="form-label">Nombre Completo</label>
-                        <input type="text" name="Nombre_Completo" class="form-control" placeholder="Nombre como aparecerá en el certificado" required>
-                    </div>
-                    <div class="col-12">
-                        <label class="form-label">Correo Electrónico Institucional o Personal</label>
-                        <input type="email" name="Email" class="form-control" placeholder="ejemplo@correo.com" required>
-                    </div>
-                    <div class="col-12">
-                        <label class="form-label">Área de Interés / Perfil</label>
-                        <select name="Perfil_Profesional" class="form-select">
-                            <option value="estudiante">Estudiante de Ingeniería</option>
-                            <option value="ingeniero">Ingeniero / Geólogo Egresado</option>
-                            <option value="investigador">Investigador Académico</option>
-                            <option value="aficionado">Entusiasta de la Geología</option>
-                        </select>
-                    </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre Completo</label>
+                    <input type="text" name="Nombre" class="form-control" placeholder="Para tu certificado" required>
                 </div>
-
+                <div class="mb-3">
+                    <label class="form-label">Correo Electrónico</label>
+                    <input type="email" name="Email" class="form-control" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">Perfil profesional</label>
+                    <select name="Perfil" class="form-select">
+                        <option value="estudiante">Estudiante Universitario</option>
+                        <option value="ingeniero">Ingeniero / Profesional</option>
+                        <option value="aficionado">Entusiasta</option>
+                    </select>
+                </div>
                 <button type="submit" class="btn-inscripcion">Finalizar Registro</button>
             </form>
 
+            <div class="whatsapp-box">
+                <p class="mb-2 fw-bold" style="color: #128C7E;">¡Paso importante!</p>
+                <p class="small text-muted mb-3">Únete al grupo oficial para recibir el enlace de las clases y materiales exclusivos.</p>
+                <a href="https://chat.whatsapp.com/GxaW2NkRGpHE8m8oOYdryK" target="_blank" class="btn-whatsapp">
+                    <i class="bi bi-whatsapp"></i> UNIRME AL GRUPO DE WHATSAPP
+                </a>
+            </div>
+
             <a href="https://www.instagram.com/yxe.geo" target="_blank" class="insta-footer">
-                <i class="bi bi-instagram"></i> @YXE.GEO
+                <i class="bi bi-instagram me-2"></i> @YXE.GEO
             </a>
         </div>
     </div>
 
     <footer>
-        © 2026 Joel • Ingeniero en Geociencias • TecNM <br>
-        Desarrollado para la comunidad geocientífica
+        © 2026 Joel • Ingeniero en Geociencias • TecNM
     </footer>
 </div>
 
